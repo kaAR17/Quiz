@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div id="login-page">
+    <h2>Welcome to the Quiz!</h2>
+    <form id="login-form">
+        <label for="name">Enter your Name</label>
+        <input type="text"  id="name" placeholder="Your Name" required ><br><br>
+        <label for="log-in">Enter your Email</label>
+        <input type="text"  id="log-in" placeholder="Your Email" required ><br><br>
+        <button type="submit">Start Quiz</button>
+    </form>
+   </div>
+   <div id="instruction-page" style="display:none">
+    <h2>Quiz Instructions</h2>
+    <ul>
+        <li type='1'>Welcome! Please answer the following questions</li>
+        <li type='1'>Choose the correct option from the available choices</li>
+        <li type='1'>You will have 30 seconds for each question</li>
+        <li type='1'>You will be penalized half a second if you take extra time</li>
+    </ul>
+    <button id="start-quiz">Start Quiz</button>
+   </div>
+   <div id="question-page" style="display:none">
+    <h2 id="question-text"></h2>
+    <div id="options"></div>
+    <div id="timer"></div> 
+    <button id="next-question" style="display:none">Next Question</button> 
+   </div>
+   <div id="result-page" style="display:none">
+    <h2>Quiz Completed</h2>
+    <p id="score"></p>
+    <button id="restart-quiz">Restart Quiz</button>
+   </div>
+<script src="script.js"></script>
+</body>
+
+</html>
